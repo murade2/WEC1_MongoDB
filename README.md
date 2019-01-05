@@ -3,6 +3,7 @@
 $ apt show mongodb
 
 
+```
 
 $ wget http://andyfelong.com/downloads/core_mongodb_3_0_14.tar.gz
 
@@ -31,9 +32,11 @@ $ sudo mkdir /var/lib/mongodb
 $ sudo chown mongodb:root /var/lib/mongodb
 
 $ sudo chmod 775 /var/lib/mongodb
+```
 
 
 ---
+```
 
 [Unit]
 
@@ -63,8 +66,10 @@ logpath = /var/log/mongodb/mongodb.log
 logappend = true
 
 storageEngine = mmapv1
+```
 
 ---
+```
 
 $ sudo nano /etc/systemd/system/mongodb.service
 
@@ -78,6 +83,7 @@ $ sudo service mongodb status
 
 $ tail /var/log/mongodb/mongodb.log
 
+```
 
 
 
