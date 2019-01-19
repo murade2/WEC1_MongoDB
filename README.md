@@ -6,7 +6,7 @@
 
 ```
 
-$ mkdir
+$ mkdir tmp
 
 $ cd tmp
 
