@@ -101,6 +101,12 @@ $ mongo -version
 ```
 $ sudo service mongodb start
 ```
+
+## ポートの確認
+```
+$ netstat -antu | grep 27017
+```
+
 ```
 $ sudo service mongodb status
 ```
