@@ -50,7 +50,9 @@ $ sudo chmod 775 /var/lib/mongodb
 
 ## サービスの設定
 
+```
 $ sudo nano /etc/systemd/system/mongodb.service
+```
 
 ```
 
