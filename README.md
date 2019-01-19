@@ -88,22 +88,25 @@ storageEngine = mmapv1
 ```
 
 ---
-```
 
 ## バージョンの確認
 
+```
 $ mongo -version
+```
 
 ## サービスの起動
-
+```
 $ sudo service mongodb start
-
+```
+```
 $ sudo service mongodb status
+```
 
 ## ログの確認
 
+```
 $ tail /var/log/mongodb/mongodb.log
-
 ```
 ---
 
