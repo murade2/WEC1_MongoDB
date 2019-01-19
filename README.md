@@ -76,6 +76,11 @@ WantedBy=multi-user.target
 ## mongodb.confの設定
 
 ```
+$ sudo nano /etc/mongodb.conf
+```
+
+
+```
 bind_ip = 127.0.0.1
 
 quiet = true
