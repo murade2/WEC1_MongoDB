@@ -1,9 +1,14 @@
 # WEC1_MongoDB
 
-$ apt show mongodb
 
+
+## Download
 
 ```
+
+$ mkdir
+
+$ cd tmp
 
 $ wget http://andyfelong.com/downloads/core_mongodb_3_0_14.tar.gz
 
@@ -12,6 +17,12 @@ $ tar xvzf core_mongodb_3_0_14.tar.gz
 $ wget http://andyfelong.com/downloads/core_mongodb.tar.gz
 
 $ tar xvzf tools_mongodb_3_0_14.tar.gz
+
+```
+
+## 環境設定
+
+```
 
 $ sudo chown root:root mongo*
 
@@ -36,6 +47,11 @@ $ sudo chmod 775 /var/lib/mongodb
 
 
 ---
+
+## サービスの設定
+
+$ sudo nano /etc/systemd/system/mongodb.service
+
 ```
 
 [Unit]
@@ -54,7 +70,10 @@ ExecStart=/usr/bin/mongod --quiet --config /etc/mongodb.conf
 
 WantedBy=multi-user.target
 
+```
+## mongodb.confの設定
 
+```
 bind_ip = 127.0.0.1
 
 quiet = true
@@ -71,20 +90,22 @@ storageEngine = mmapv1
 ---
 ```
 
-$ sudo nano /etc/systemd/system/mongodb.service
-
-$ sudo nano /etc/mongodb.conf
+## バージョンの確認
 
 $ mongo -version
+
+## サービスの起動
 
 $ sudo service mongodb start
 
 $ sudo service mongodb status
 
+## ログの確認
+
 $ tail /var/log/mongodb/mongodb.log
 
 ```
-
+---
 
 
 
