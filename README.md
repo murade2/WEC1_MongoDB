@@ -10,13 +10,13 @@ $ mkdir tmp
 
 $ cd tmp
 
-$ wget http://andyfelong.com/downloads/core_mongodb_3_0_14.tar.gz
+$ wget https://andyfelong.com/downloads/mongodb_stretch_3_0_14_core.zip
 
-$ tar xvzf core_mongodb_3_0_14.tar.gz
+$ unzip mongodb_stretch_3_0_14_core.zip
 
-$ wget http://andyfelong.com/downloads/core_mongodb.tar.gz
+$ wget https://andyfelong.com/downloads/mongodb_stretch_3_0_14_tools.zip
 
-$ tar xvzf tools_mongodb_3_0_14.tar.gz
+$ unzip mongodb_stretch_3_0_14_tools.zip
 
 ```
 
@@ -27,6 +27,8 @@ $ tar xvzf tools_mongodb_3_0_14.tar.gz
 $ sudo chown root:root mongo*
 
 $ sudo chmod 755 mongo*
+
+$ cd core
 
 $ sudo strip mongo*
 
